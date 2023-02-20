@@ -4,12 +4,12 @@ const mongoose = require('mongoose');
 
 const stuffRoutes = require('./routes/stuff');
 
-//mongoose.connect('mongodb://localhost:27017/test',
+
 mongoose.connect('mongodb+srv://opencelio:ocia@cluster0.xb9ucvg.mongodb.net/test?retryWrites=true&w=majority',
   { useNewUrlParser: true,
     useUnifiedTopology: true })
-  .then(() => console.log('Connexion à MongoDB réussie !'))
-  .catch(() => console.log('Connexion à MongoDB échouée !'));
+  .then(() => console.log('Connexion à la base de donnée MongoDB réussie !'))
+  .catch(() => console.log('Connexion à la base de donnée MongoDB échouée !'));
 
 
 const app = express();
